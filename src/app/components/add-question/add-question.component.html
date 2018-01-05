@@ -1,0 +1,22 @@
+<div class="question">
+  <div class="card border-primary mb-3">
+    <div class="card-header">
+      Add Question
+    </div>
+    <div class="card-text container">
+      <form (submit)="onSubmit()">
+        <div class="form-group">
+          <input type="text" class="form-control" 
+          [(ngModel)]="text" name="text" placeholder="Text"
+          #questionText="ngModel">
+          <br>
+          <input type="text" class="form-control" 
+          [(ngModel)]="answer" name="answer" placeholder="Answer"
+          #questionAnswer="ngModel">
+          <br>
+          <input type="submit" class="btn btn-primary" value="Submit">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
